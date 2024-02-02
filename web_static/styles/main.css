@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main: #1996a8;
+    --border: #BFBFBF;
+    --done: #90EE90;
+    --missed: #FF7F7F;
+    --skip: #777;
+    --empty: #eee;
+}
+
+/* the header */
+head {
+    height: 60px;
+    display: block;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background-size: 170px;
+    background-color: var(--main);
+    border-bottom: 2px solid var(--border);
+    position: relative;
+}
+
+.add {
+    display: inline-block;
+    position: absolute;
+    right: 20px; top: 1rem;
+    border: 0;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.add:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
+/* navigation bar */
+nav {
+    position: absolute;
+    width: 70%;
+    bottom: 2%;
+    left: 15%;
+    border: 2px solid var(--border);
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 0; margin: 5px 0px;
+}
+
+nav ul li {
+    transition: background-color 0.3s;
+}
+
+nav ul li::hover {
+    background-color: var(--main);
+}
+
+nav ul li::before {
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+nav ul li:hover::before {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--main);
+}
+
+.selected {
+    color: var(--main)
+}
+
+#home::before {
+    content: '\f058';
+}
+
+#friends::before {
+    content: '\f500';
+}
+
+#messages::before {
+    content: '\f27a';
+}
+
+#settings::before {
+    content: '\f013';
+}
+
+/* habits */
+section {
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    box-sizing: border-box;
+    overflow: auto;
+    margin-top: 5px;
+}
+
+section::-webkit-scrollbar {
+    width: 0;
+}
+
+.overall {
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 10px;
+}
+
+.overall h2 {
+    font-size: 20px;
+    margin: 0;
+    display: inline-block;
+}
+
+.overall span {
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+article {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+}
+
+article h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.h-info {
+    margin: 2px 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row no-wrap;
+    gap: 10px;
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.h-info li:nth-child(-n + 2) {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+.h-progress {
+    margin: 0 15px;
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.h-progress > li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    background-color: var(--empty)
+}
+
+.today::after {
+    content: "TODAY";
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -70%;
+    left: 25%;
+}
+
+.done {
+    background-color: var(--done) !important;
+}
+
+.missed {
+    background-color: var(--missed) !important;
+}
+
+.skip {
+    background-color: var(--skip) !important;
+}
+
+.empty {
+    background-color: var(--empty) !important;
+}
+
+.h-progress > li:hover {
+    cursor: pointer;
+    background-color: var(--main)
+}
+
+.dropdown {
+    position: absolute;
+    background-color: #ddd;
+    z-index: 999;
+    padding: 0;
+    list-style-type: none;
+    width: 150;
+    padding: 0 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.dropdown li::before {
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.d-done::before {
+    content: '\f00c';
+    background-color: var(--done)
+}
+
+.d-done:hover::before {
+    opacity: 80%;
+}
+
+.d-missed::before {
+    content: '\58';
+    background-color: var(--missed)
+}
+
+.d-missed:hover::before {
+    opacity: 80%;
+}
+
+.d-skip::before {
+    content: '\f04e';
+    background-color: var(--skip)
+}
+
+.d-skip:hover::before {
+    opacity: 80%;
+}
+
+.d-empty::before {
+    content: '\f1f8';
+    background-color: var(--empty)
+}
+
+.d-empty:hover::before {
+    opacity: 80%;
+}
+
+.h-progress > li:hover .dropdown {
+    display: block;
+}

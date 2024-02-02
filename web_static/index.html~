@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HabitShare</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <head></head>
+    <nav>
+      <ul>
+	<li id="home">Home</li>
+	<li id="friends">Friends</li>
+	<li id="messages">Messages</li>
+	<li id="settings">Settings</li>
+      </ul>
+    </nav>
+    <conatiner></container>
+  </body>
