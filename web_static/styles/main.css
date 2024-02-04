@@ -49,6 +49,7 @@ nav {
     left: 15%;
     border: 2px solid var(--border);
     border-radius: 20px;
+    background-color: #fff;
 }
 
 nav ul {
@@ -324,7 +325,7 @@ article h2 {
     }
 
     article h2 {
-	font-size: 16px;	
+	font-size: 16px;
 	padding-left: 10px;
     }
 
@@ -342,6 +343,87 @@ article h2 {
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
+    }
+
+    .dropdown {
+	left: -5px;
+    }
+
+    .today::after {
+	left: 14%
+    }
+}
+
+/* Ipad and Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+        /* header */
+    head {
+	background-size: 120px;
+	background-position: 10px;
+	height: 50px;
+    }
+
+    .add {
+	top: 15px;
+	right: 10px;
+    }
+
+    /* nav */
+    nav {
+	width: 80vw;
+	left: 10vw;
+	bottom: 5px;
+	border-radius: 20;
+	margin: 0;
+    }
+
+    /* habits */
+    section {
+	width: 100%;
+	left: 0;
+    }
+
+    .overall {
+	width: 80vw;
+    }
+
+
+    section {
+	width: 80vw;
+	left: 10vw;
+    }
+
+    section .overall h2 {
+	font-size: 15px;
+    }
+
+    section .overall span {
+	font-size: 15px;
+    }
+
+    article h2 {
+	font-size: 16px;
+	padding-left: 10px;
+    }
+
+    .h-info {
+	padding-left: 10px;
+    }
+
+    .h-progress {
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+    }
+
+    .h-progress > li {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+    }
+
+    .dropdown {
+	left: -5px;
     }
 
     .today::after {
