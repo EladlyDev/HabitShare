@@ -1,0 +1,31 @@
+:root {
+    --gap: 15px
+}
+
+section {
+    height: 90%;
+}
+
+section .main {
+    border-bottom: 2px solid var(--border);
+}
+
+.main h2 {
+    margin-bottom: 0;
+    margin-top: var(--gap);
+}
+
+.main .h-info {
+    margin-bottom: var(--gap);
+}
+
+
+section .progress {
+    height: 50%;
+    margin-top: var(--gap);
+    border-bottom: 2px solid var(--border);
+}
+
+section .comments {
+    height: 30%;
+}
