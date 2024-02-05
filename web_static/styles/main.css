@@ -6,6 +6,8 @@
 
 :root {
     --main: #1996a8;
+    --darkmain: #106482;
+    --hover: #ddd;
     --border: #BFBFBF;
     --done: #90EE90;
     --missed: #FF7F7F;
@@ -27,13 +29,22 @@ head {
 }
 
 .add {
-    display: inline-block;
+    border: none;
     position: absolute;
-    right: 20px; top: 1rem;
-    border: 0;
-    color: #FFFFFF;
-    background-color: transparent;
-    font-size: 20px;
+    top: 30px; right: 20px;
+    background: transparent;
+}
+
+.add::before {
+    content: "\2b";
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 18px;
+    left: 10px;
+    color: #fff;
 }
 
 .add:hover {
@@ -142,7 +153,7 @@ article {
 }
 
 article:hover {
-    background-color: #ddd;
+    background-color: var(--hover);
     cursor: pointer;
 }
 
@@ -290,9 +301,10 @@ article h2 {
 	height: 50px;
     }
 
-    .add {
-	top: 15px;
-	right: 10px;
+    .add::before {
+	font-size: 25px;
+	bottom: 18px;
+	left: 15px;
     }
 
     /* nav */
@@ -363,9 +375,10 @@ article h2 {
 	height: 50px;
     }
 
-    .add {
-	top: 15px;
-	right: 10px;
+    .add::before {
+	font-size: 26px;
+	bottom: 19px;
+	left: 10px;
     }
 
     /* nav */
