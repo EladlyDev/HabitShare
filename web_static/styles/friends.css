@@ -1,0 +1,48 @@
+.friend {
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+}
+
+.friend:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.friend h2 {
+    margin: 0;
+    margin-bottom: 2px;
+    color: var(--darkmain);
+}
+
+.friend p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.icon-fr {
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    background-color: #94d9f2;
+    margin: 0 15px;
+    margin-top: 2px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.icon-fr-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mor {
+    background-image: url("../images/guy-1.jpg");
+}
+
+.mo {
+    background-image: url("../images/guy-2.jpg");
+}

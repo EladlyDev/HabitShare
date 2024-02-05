@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HabitShare | Habit</title>
+    <title>HabitShare | Friend</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" href="images/icon.webp">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/habit.css">
+    <link rel="stylesheet" href="styles/friends.css">
+    <link rel="stylesheet" href="styles/friend.css">
     <script src="https://kit.fontawesome.com/472b38e6cf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
-    <head><button class="add" tabindex="0"></button></head>
-    <section area-label="habit full info">
-      <div class="main">
-	<h2>Wake up at 8 ⏰</h2>
-	<ul class="h-info">
-	  <li>Streak: +3</li>
-	  <li>Overall: 70%</li>
-	  <li>Private</li>
-	</ul>
+    <head><button class="add edit-fr" tabindex="0"></button></head>
+    <section aria-label="friend information">
+      <div class="info-fr">
+	<span class="icon-fr icon-fr-img mor"></span>
+	<h2>Morgan Friendlyface</h2>
+	<p>Friend</p>
+	<button class="message">Message</button>
       </div>
-      <div class="progress">
-	calendar
-      </div>
-      <div class="comments">
-	<p>No Comments</p>
+      <div class="sharing">
+	<p>Morgan is not sharing any habits with you.</p>
       </div>
     </section>
     <nav>
       <ul>
-	<a href="index.html"><li id="home" class="selected" tabindex="0"></li></a>
-	<a href="friends.html"><li id="friends" tabindex="0"></li></a>
+	<a href="index.html"><li id="home" tabindex="0"></li></a>
+	<a href="friends.html"><li id="friends" tabindex="0" class="selected"></li></a>
 	<a href="messages.html"><li id="messages" tabindex="0"></li></a>
 	<a href="settings.html"><li id="settings" tabindex="0"></li></a>
       </ul>

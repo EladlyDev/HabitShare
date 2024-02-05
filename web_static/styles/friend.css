@@ -1,0 +1,45 @@
+.info-fr {
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.icon-fr {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.info-fr h2 {
+    margin-bottom: 0;
+}
+
+.info-fr p {
+    margin: 10px 0;
+}
+
+.message {
+    border: 1px solid var(--darkmain);
+    border-radius: 3px;
+    padding: 3px;
+    background-color: transparent;
+    color: var(--darkmain);
+}
+
+.message:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.sharing {
+    text-align: center;
+}
+
+.add::before {
+    content: '\f4ff';
+    font-weight: bold;
+}
