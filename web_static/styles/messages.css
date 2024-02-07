@@ -1,0 +1,142 @@
+/* before adding chats */
+section {
+    margin-top: 0;
+}
+
+.empty {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty .icon::before {
+    content: '\2b';
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-size: 50px;
+}
+
+.empty .icon:hover::before {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+/* choose friend to chat with page */
+.friend {
+    height: 45px;
+}
+
+/* chat page */
+.chat {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.head {
+    position: absolute;
+    top: 0;
+    background-color: var(--darkmain);
+    width: 100%;
+    color: #fff;
+}
+
+.head .icon-head::before {
+    content: '\f060';
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: bold;
+    float: left;
+    margin-top: 25px;
+    margin: 23px 30px 0 15px;
+    font-size: 20px;
+}
+
+.head .icon-head:hover::before {
+    cursor: pointer;
+    opacity: 80%
+}
+
+.head h2 {
+    font-weight: 500;
+}
+
+.messages {
+    height: 80%;
+    width: 100%;
+    overflow: auto;
+    background-color: #eee;
+}
+
+.new-message {
+    height: 7%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 60px;
+    border-top: 1px solid var(--border);
+}
+
+.new-message input {
+    width: 85%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.new-message input:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 480px) {
+    .new-message {
+	bottom: 45px;
+    }
+
+    .new-message input {
+	width: 80%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .new-message {
+	bottom: 50px;
+    }
+
+    .new-message input {
+	width: 84%;
+    }
+}
+
+.new-message button {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    border: none;
+    background: none;
+    color: var(--darkmain);
+    background-color: #fff;
+}
+
+.new-message button:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+/* after adding chats */
+.curr-chats .recent-message {
+    font-weight: normal;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.curr-chats .recent-time {
+    float: right;
