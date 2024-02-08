@@ -1,0 +1,41 @@
+.row {
+    height: 60px;
+    border-bottom: 1px solid var(--border);
+}
+
+.row:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.row > * {
+    display: inline-block;
+    margin-top: 22px;
+    margin: 22px 5px 0;
+}
+
+.row > *:nth-child(2) {
+    float: right;
+}
+
+.pic span {
+    width: 45px;
+    height: 45px;
+    background-color: darkgreen;
+    border-radius: 50%;
+    margin-top: 8px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+}
+
+.pic::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.delete {
+    border: solid var(--border);
+    border-width: 15px 0;
